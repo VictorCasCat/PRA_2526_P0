@@ -7,13 +7,13 @@ class BrazoRobotico {
 		bool Sujetar;
 	public:
 		BrazoRobotico();
-		double getx();
-		double gety();
-		double getz();
-		bool getSujetar();
+		double getx() const;
+		double gety() const;
+		double getz() const;
+		bool getSujetar() const;
 		void coger();
 		void dejar();
-		double mover(double,double,double);
+		void mover(double,double,double);
 
 
-} 
+}; 

@@ -1,47 +1,38 @@
-#include <iostream>
 #include "BrazoRobotico.h"
+BrazoRobotico::BrazoRobotico(){
+	x = 0.0; 
+        y = 0.0;
+        z = 0.0;
+        Sujetar = false;
+}
 
-double getx(){
+double BrazoRobotico::getx()const{
 	return x;
 }
 
-double gety(){
+double BrazoRobotico::gety()const{
 	return y;
 }
 
-double getz(){
+double BrazoRobotico::getz()const{
 	return z;
 }
 
-bool getSujetar(){
+bool BrazoRobotico::getSujetar()const{
 	return Sujetar;
 }
 
-void coger(){
+void BrazoRobotico::coger(){
 	Sujetar = true;
 }
 
-void dejar(){
+void BrazoRobotico::dejar(){
 	Sujetar = false;
 }
 
-//Asignacion de las coordenadas iniciales.
-BrazoRobotico::Brazorobotico(){
-	x = 0.0;
-	y = 0.0;
-	z = 0.0;
-	Sujetar = false;
-}
-
-double mover(double x, double y, double z){
+void BrazoRobotico::mover(double x, double y, double z){
 	this -> x = x;
 	this -> y = y;
 	this -> z = z;
 }
 
-void main(){
-
-	
-return 0;
-
-}
